@@ -1,0 +1,77 @@
+/* CSS Reset */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  height: 100vh;
+  line-height: 1.5;
+  background-color: black;
+  color: white;
+  display: grid;
+  gap: 20px;
+  place-content: center;
+  text-align: left;
+}
+#title{
+  background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: left;
+}
+h1 {
+  -webkit-animation: hue 2s infinite linear;
+}
+@-webkit-keyframes hue {
+  from {
+   -webkit-filter: hue-rotate(0deg);
+  }
+
+  to {
+   -webkit-filter: hue-rotate(-360deg);
+  }
+}
+.quote-box{
+  width: 400px;
+  padding: 16px;
+  border: 5px solid;
+  border-image: linear-gradient(45deg, purple, orange) 1;
+}
+#author{
+  float:right;
+  color: rgb(0, 98, 130);
+  font-weight: bold;
+  font-style: italic;
+  -webkit-animation: hue 1s infinite linear;
+
+}
+#btn{
+  padding: 8px;
+  text-transform: uppercase;
+  border: 2px solid white;
+  letter-spacing: 3px;
+  background-color: black;
+  transition: all 0.5s ease-in-out;
+  color: white;
+
+
+}
+#btn:hover{
+  background-color: rgb(133, 23, 201);
+  color: rgb(221, 255, 0);
+}
+#author{
+  float: right;
+
+}
